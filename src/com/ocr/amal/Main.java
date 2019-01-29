@@ -1,5 +1,6 @@
 package com.ocr.amal;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -67,12 +68,21 @@ public class Main {
      */
     public static int demande(String str, int min) {
         int choix;
-        boolean choixCorrect = false;
+        boolean choixCorrect;
         Scanner sc = new Scanner(System.in);
         do {
             choix = 0;
             System.out.println(str);
-
+            try {
+                choixCorrect = true;
+                choix = sc.nextInt();
+            } catch (InputMismatchException e) {
+                sc.next();
+                choixCorrect = false;
+            }
+            if (choixCorrect) {
+                if (!(choix >= min)) choixCorrect = false;
+            }
         } while (!choixCorrect);
         return choix;
     }

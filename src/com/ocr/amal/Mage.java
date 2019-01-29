@@ -45,10 +45,10 @@ public class Mage extends Joueur{
                 //Soin
                 phrase = phrase + nom + " utilise Soin et gagne ";
                 if ((intelligence * 2) + vie > vieMax) {
-                    phrase = phrase + (vieMax - vie) + " de vitalitÃ©";
+                    phrase = phrase + (vieMax - vie) + " de vitalité";
                     vie = vieMax;
                 } else {
-                    phrase = phrase + (intelligence * 2) + " de vitalitÃ©";
+                    phrase = phrase + (intelligence * 2) + " de vitalité";
                     vie = vie + (intelligence * 2);
                 }
                 break;

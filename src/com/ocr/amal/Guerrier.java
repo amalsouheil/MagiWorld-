@@ -39,12 +39,12 @@ public class Guerrier extends Joueur{
         switch (choix) {
             case 1:
                 adversaire.enleverVie(force);
-                phrase = phrase + nom + " utilise Coup d'Ã©pÃ©e et inflige " + force + " de dÃ©gÃ¢ts";
+                phrase = phrase + nom + " utilise  Coup d’Épée et inflige " + force + " de dÃ©gÃ¢ts";
                 break;
             case 2:
                 adversaire.enleverVie((force * 2));
                 vie = vie - force / 2;
-                phrase = phrase + nom + " utilise Coup de rage, inflige " + (force * 2) + " de dÃ©gÃ¢ts et perd " + (force / 2) + " de vitalitÃ©";
+                phrase = phrase + nom + " utilise Coup de rage, inflige " + (force * 2) + " de dÃ©gÃ¢ts et perd " + (force / 2) + " de vitalité";
                 break;
             default:
                 break;
