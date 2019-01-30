@@ -39,7 +39,7 @@ public class Rodeur extends Joueur{
         switch (choix) {
             case 1:
                 adversaire.enleverVie(agilite);
-                phrase = phrase + nom + " utilise Tir à l'Arc et inflige " + agilite + " de dÃ©gÃ¢ts";
+                phrase = phrase + nom + " utilise Tir à  l'Arc et inflige " + agilite + " de dégats";
                 break;
             case 2:
                 agilite = agilite + (niveau / 2);
